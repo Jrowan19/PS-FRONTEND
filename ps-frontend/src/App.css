@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+body {
+  background-image: url('https://www.spawnpoiint.com/wp-content/uploads/Wallpaper-Icons-PS4-3840x2160.png');
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

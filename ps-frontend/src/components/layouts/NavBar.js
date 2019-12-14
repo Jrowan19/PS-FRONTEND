@@ -4,7 +4,7 @@ import { Link } from '@reach/router';
 const NavBar = () => {
   return (
     <div>
-      <ul className="nav justify-content-center bg-dark">
+      <ul class="nav justify-content-center bg-dark">
         <li className="nav-item">
           <Link className="nav-link active mr-5" to="/">
             Home

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import * as api from '../../api';
-import GameCard from './GameCards';
-
+import * as api from '../../../api';
+import GameCard from '../gameCards/GameCards';
 
 class Games extends Component {
   state = {
@@ -54,15 +53,3 @@ class Games extends Component {
 }
 
 export default Games;
-
-{
-  /* <ul key={game.name}>
-<li>{game.name}</li>
-<li>{game.platform}</li>
-<li>{game.genre}</li>
-<li>{game.release_date}</li>
-<li>{game.no_of_players}</li>
-<li>{game.publisher}</li>
-<li>{game.boxart}</li>
-</ul> */
-}
