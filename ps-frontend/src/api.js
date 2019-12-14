@@ -18,3 +18,9 @@ export const getSingleGame = endpoint => {
     return game;
   });
 };
+
+export const postGame = newGame => {
+  return request.post('/games', newGame).then(({ data: { game } }) => {
+    return game;
+  });
+};

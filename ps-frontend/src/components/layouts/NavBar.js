@@ -15,6 +15,11 @@ const NavBar = () => {
             Games
           </Link>
         </li>
+        <li className="nav-item">
+          <Link className="nav-link ml-5" to="/game">
+            Games Adder
+          </Link>
+        </li>
       </ul>
     </div>
   );

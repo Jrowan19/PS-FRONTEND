@@ -6,6 +6,7 @@ import NavBar from './components/layouts/NavBar';
 import Home from './components/pages/home/Home';
 import { Router } from '@reach/router';
 import SingleGame from './components/pages/singleGame/SingleGame';
+import GameAdder from './components/pages/games/GameAdder';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Router>
         <Home path="/" />
         <Games path="/games" />
+        <GameAdder path="/game" />
         <SingleGame path="games/:name" />
       </Router>
     </div>

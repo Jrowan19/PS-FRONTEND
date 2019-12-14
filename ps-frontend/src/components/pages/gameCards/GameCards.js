@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from '@reach/router';
-import styles from './GameCards.module.css';
 
 const GameCard = props => {
   const { name, boxart } = props.games;
