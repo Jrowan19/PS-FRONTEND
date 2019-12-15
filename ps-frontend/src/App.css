@@ -9,7 +9,7 @@
 .nav {
   margin-top: -10;
   top: 0;
-  position: relative;
+  position: sticky;
   height: 50px;
   width: 100%;
   background: #1b242f;

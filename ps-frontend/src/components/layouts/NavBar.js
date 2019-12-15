@@ -3,12 +3,12 @@ import { Link } from '@reach/router';
 
 const NavBar = () => {
   return (
-    <nav class="nav navbar-expand-lg navbar-light bg-dark">
-      <Link class="navbar-brand text-primary ml-4" to="/">
-        <i class="fab fa-playstation "></i>
+    <nav className="nav navbar-expand-lg navbar-light bg-dark fixed-top">
+      <Link className="navbar-brand text-primary ml-4" to="/">
+        <i className="fab fa-playstation "></i>
       </Link>
       <button
-        class="navbar-toggler"
+        className="navbar-toggler"
         type="button"
         data-toggle="collapse"
         data-target="#navbarSupportedContent"
@@ -16,11 +16,11 @@ const NavBar = () => {
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span className="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul className="navbar-nav mr-auto">
           <li className="nav-item">
             <Link className="nav-link active ml-5 mr-5 text-danger h4" to="/">
               Home
