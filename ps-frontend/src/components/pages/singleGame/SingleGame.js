@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import * as api from '../../../api';
+
 import { Link } from '@reach/router';
 import moment from 'moment';
+import * as api from '../../../api';
 
 class SingleGame extends Component {
   state = {
@@ -81,19 +82,6 @@ class SingleGame extends Component {
     api.getSingleGame(`games/${this.props.name}`).then(game => {
       this.setState({ game });
     });
-    //       .catch(
-    //         ({
-    //           response: {
-    //             data: { message },
-    //             status
-    //           }
-    //         }) => {
-    //           this.setState({
-    //             error: { message, status }
-    //           });
-    //         }
-    //       );
-    //   };
   };
 }
 

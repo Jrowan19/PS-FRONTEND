@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import * as api from '../../../api';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
+import { Link } from '@reach/router';
 
 class GameAdder extends Component {
   state = {
@@ -183,7 +184,9 @@ class GameAdder extends Component {
             >
               Install Game
             </button>
-            <button className="btn btn-warning m-2">Back to Library</button>
+            <Link to="/games">
+              <button className="btn btn-warning m-2">Back to Library</button>
+            </Link>
           </form>
         </div>
       </>

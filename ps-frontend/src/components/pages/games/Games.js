@@ -49,8 +49,11 @@ const Games = () => {
       <div className="text-white text-dark">
         {games.map(game => {
           return <GameCard games={game} key={game.name} />;
+          
         })}
+        
       </div>
+     
     </div>
   );
 };
