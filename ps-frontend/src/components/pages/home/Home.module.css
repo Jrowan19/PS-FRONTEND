@@ -1,0 +1,103 @@
+@keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+@-webkit-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+@-moz-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+@-webkit-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+#navbar {
+  display: none !important;
+}
+
+/* body {
+    overflow-x: hidden;
+  } */
+
+.background_container {
+  background-color: black;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 95vh;
+}
+body {
+  background-color: black;
+}
+
+.station {
+  width: 10000px;
+  height: 100%;
+  background: transparent
+    url('https://www.psu.com/app/uploads/2019/09/ps4-symbol-1.jpg');
+  background-size: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+
+  -moz-animation: move-background 100s linear infinite;
+  -ms-animation: move-background 100s linear infinite;
+  -o-animation: move-background 100s linear infinite;
+  -webkit-animation: move-background 100s linear infinite;
+  animation: move-background 100s linear infinite;
+}
+
+/* img {
+  height: 70vh;
+  width: 70vh;
+  position: absolute;
+  z-index: 99999;
+  right: 20px;
+} */
+
+.welcome {
+  display: flex;
+  position: absolute;
+  margin-top: 100px;
+  width: 60%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 45px;
+  font-family: 'Raleway bold';
+  z-index: 999999999;
+}
+
+@media only screen and (max-device-width: 500px) {
+  .welcome {
+    padding-left: 60px;
+    color: blue;
+  }
+}
