@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import * as api from '../../../api';
 import DatePicker from 'react-datepicker';
-
 import 'react-datepicker/dist/react-datepicker.css';
 
 class GameAdder extends Component {
@@ -56,14 +55,19 @@ class GameAdder extends Component {
     return (
       <>
         <div>
-          <div className="container-fluid " style={{ height: 35 }}>
-            <div className="row ">
-              <div className="col text-white mt-5" style={{ fontSize: 32 }}>
-                ᔕIGᑎ ᑌᑭ ᕼEᖇE
-              </div>
+          <div className="container " style={{ height: 35 }}>
+            <div className="row">
+              <div
+                className="col text-white mt-5"
+                style={{ fontSize: 32 }}
+              ></div>
             </div>
           </div>
-          <form onSubmit={this.addGame} className="" style={{ height: 800 }}>
+          <form
+            onSubmit={this.addGame}
+            className="border border-info mx-auto mt-3 mp-3"
+            style={{ height: 800, width: 1000 }}
+          >
             <div className="form-group col-sm-3 mx-auto ">
               <label className=" text-white" htmlFor="inlineFormInput ">
                 Game Name
@@ -167,11 +171,10 @@ class GameAdder extends Component {
                 window.confirm('Game Now Added ');
               }}
             >
-              Add Game
+              Install Game
             </button>
           </form>
         </div>
-        <div className="showComs"></div>
       </>
     );
   }

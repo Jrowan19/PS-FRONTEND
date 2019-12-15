@@ -28,7 +28,10 @@ class SingleGame extends Component {
             <div className="col"></div>
           </div>
         </div>
-        <div class="card mx-auto mb-5" style={{ width: '25rem' }}>
+        <div
+          class="card mx-auto mb-5 border border-info rounded"
+          style={{ width: '25rem' }}
+        >
           <img src={boxart} class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title">{name}</h5>
