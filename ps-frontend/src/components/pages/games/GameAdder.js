@@ -68,7 +68,7 @@ class GameAdder extends Component {
             className="border border-info mx-auto mt-3 mp-3"
             style={{ height: 800, width: 1000 }}
           >
-            <div className="form-group col-sm-3 mx-auto ">
+            <div className="form-group col-sm-3 mx-auto mt-3">
               <label className=" text-white" htmlFor="inlineFormInput ">
                 Game Name
               </label>
@@ -164,15 +164,26 @@ class GameAdder extends Component {
                 onChange={this.handleChange}
               />
             </div>
+
             <button
+              disabled={
+                !boxart ||
+                !name ||
+                !platform ||
+                !publisher ||
+                !genre ||
+                !no_of_players ||
+                !release_date
+              }
               type="submit"
-              className="btn btn-primary"
+              className="btn btn-success"
               onClick={() => {
                 window.confirm('Game Now Added ');
               }}
             >
               Install Game
             </button>
+            <button className="btn btn-warning m-2">Back to Library</button>
           </form>
         </div>
       </>
