@@ -24,12 +24,15 @@ class SingleGame extends Component {
 
     return (
       <>
-        <div className="container-fluid" style={{ height: 50 }}>
+        <div className="container" style={{ height: 50 }}>
           <div className="row">
             <div className="col"></div>
           </div>
         </div>
-        <div className="card mx-auto mb-5 border border-info rounded ">
+        <div
+          className="card mx-auto col mb-5 mt-3 border border-info rounded xs-12"
+          style={{ width: '40rem' }}
+        >
           <img src={boxart} className="card-img-top mt-3" alt="..." />
           <div className="card-body">
             <h5 className="card-title">{name}</h5>

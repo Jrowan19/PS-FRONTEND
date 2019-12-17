@@ -6,7 +6,7 @@ const GameCard = props => {
 
   return (
     <div
-      className="card mx-auto col mb-5 mt-3 border border-info rounded"
+      className="card mx-auto col mb-5 mt-3 border border-info rounded xs-12"
       style={{ width: '40rem' }}
     >
       <img src={boxart} className="card-img-top mt-3" alt="..." />

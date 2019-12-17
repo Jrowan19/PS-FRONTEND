@@ -3,7 +3,7 @@ import { Link } from '@reach/router';
 
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
       <Link className="navbar-brand text-primary ml-4" to="/">
         <i className="fab fa-playstation "></i>
       </Link>
