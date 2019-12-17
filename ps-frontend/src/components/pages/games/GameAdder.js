@@ -67,7 +67,6 @@ class GameAdder extends Component {
           <form
             onSubmit={this.addGame}
             className="border border-info mx-auto mt-3 mp-3"
-            style={{ height: 800, width: 1000 }}
           >
             <div className="form-group col-sm-3 mx-auto mt-3">
               <label className=" text-white" htmlFor="inlineFormInput ">

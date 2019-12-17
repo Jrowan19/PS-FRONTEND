@@ -29,33 +29,33 @@ class SingleGame extends Component {
             <div className="col"></div>
           </div>
         </div>
-        <div class="card mx-auto mb-5 border border-info rounded ">
-          <img src={boxart} class="card-img-top mt-3" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">{name}</h5>
+        <div className="card mx-auto mb-5 border border-info rounded ">
+          <img src={boxart} className="card-img-top mt-3" alt="..." />
+          <div className="card-body">
+            <h5 className="card-title">{name}</h5>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">
+          <ul className="list-group list-group-flush">
+            <li className="list-group-item">
               Platform - {} {platform}
             </li>
-            <li class="list-group-item">
+            <li className="list-group-item">
               Genre - {} {genre}
             </li>
-            <li class="list-group-item">
+            <li className="list-group-item">
               Release Date - {}
               {moment(release_date)
                 .format()
                 .slice(0, 10)}
             </li>
-            <li class="list-group-item">
+            <li className="list-group-item">
               Number of Players - {} {no_of_players}
             </li>
-            <li class="list-group-item">
+            <li className="list-group-item">
               Publisher - {}
               {publisher}
             </li>
           </ul>
-          <div class="card-body">
+          <div className="card-body">
             <Link to="/games" class="card-link">
               Back to Library
             </Link>
