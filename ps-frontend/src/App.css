@@ -17,3 +17,7 @@
   text-align: left;
   z-index: 99;
 }
+
+body {
+  overflow-x: hidden;
+}
